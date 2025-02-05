@@ -1,0 +1,32 @@
+@use "./variables" as *;
+
+@mixin flex-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Media Queries
+@mixin mobile {
+  @media (min-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: $laptop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}

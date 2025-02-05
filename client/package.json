@@ -4,12 +4,14 @@
   "private": true,
   "dependencies": {
     "@tanstack/react-query": "^5.66.0",
+    "@types/react-dom": "^19.0.3",
     "axios": "^1.7.9",
     "cra-template-typescript": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "sass": "^1.83.4"
   },
   "scripts": {
     "start": "react-scripts start",
