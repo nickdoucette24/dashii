@@ -1,0 +1,30 @@
+@use "../../sass/main.scss" as *;
+@use "../../sass/partials/mixins" as *;
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo-wrapper {
+    @include flex-centre;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-wrapper {
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__auth-wrapper {
+    @extend .header__nav-wrapper;
+  }
+}
