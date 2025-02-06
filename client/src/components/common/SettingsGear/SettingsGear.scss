@@ -1,0 +1,14 @@
+.settings-gear {
+  width: 2.5rem;
+  border-radius: 2rem;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #6060602d;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}

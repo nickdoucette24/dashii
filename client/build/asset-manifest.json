@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.29a377cd.css",
+    "main.js": "/static/js/main.534ccbaa.js",
+    "static/media/settings.png": "/static/media/settings.22b963cd49c6aac9aabf.png",
+    "static/media/FugazOne-Regular.ttf": "/static/media/FugazOne-Regular.b409ae0da16dcaf2d59b.ttf",
+    "index.html": "/index.html",
+    "main.29a377cd.css.map": "/static/css/main.29a377cd.css.map",
+    "main.534ccbaa.js.map": "/static/js/main.534ccbaa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29a377cd.css",
+    "static/js/main.534ccbaa.js"
+  ]
+}

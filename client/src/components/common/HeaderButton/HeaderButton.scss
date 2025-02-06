@@ -1,0 +1,11 @@
+@use "../../../sass/main.scss" as *;
+@use "../../../sass/partials/mixins" as *;
+@use "../../../sass/partials/fonts" as *;
+
+.header-button {
+  @include flex-centre;
+
+  &__text {
+    font-weight: bold;
+  }
+}

@@ -1,7 +1,7 @@
-type Props = {};
+import "./MainLogo.scss";
 
-const MainLogo = (props: Props) => {
-  return <div>dashii</div>;
+const MainLogo = () => {
+  return <div className="logo-text">dashii.</div>;
 };
 
 export default MainLogo;

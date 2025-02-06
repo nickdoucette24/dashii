@@ -1,7 +1,9 @@
-type Props = {};
+import gear from "../../../assets/icons/settings.png";
 
-const SettingsGear = (props: Props) => {
-  return <div>SettingsGear</div>;
+import "./SettingsGear.scss";
+
+const SettingsGear = () => {
+  return <img className="settings-gear" src={gear} />;
 };
 
 export default SettingsGear;

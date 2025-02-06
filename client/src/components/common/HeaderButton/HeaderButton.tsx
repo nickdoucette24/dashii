@@ -1,3 +1,5 @@
+import "./HeaderButton.scss";
+
 type HeaderButtonProps = {
   text: string;
 };
