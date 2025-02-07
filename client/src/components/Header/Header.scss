@@ -41,6 +41,7 @@
   &__content {
     display: flex;
     align-items: center;
+    width: fit-content;
 
     @include tablet {
       margin-left: auto;

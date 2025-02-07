@@ -1,17 +1,16 @@
-import { useState } from "react";
 import "./Hamburger.scss";
 
-const Hamburger = () => {
-  const [isOpen, setIsOpen] = useState(false);
+interface Props {
+  isOpen: boolean;
+  onToggle: () => void;
+}
 
-  const handleHamburgerClick = () => {
-    setIsOpen(!isOpen);
-  };
+const Hamburger = ({ isOpen, onToggle }: Props) => {
   return (
     <button
       className={`hamburger hamburger--elastic ${isOpen ? "is-active" : ""}`}
       type="button"
-      onClick={handleHamburgerClick}
+      onClick={onToggle}
       aria-label="Toggle menu"
     >
       <span className="hamburger-box">

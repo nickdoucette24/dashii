@@ -9,7 +9,7 @@ const ThemeIcon = () => {
   return (
     <img
       className="theme-icon"
-      src={theme === "light" ? lightIcon : darkIcon}
+      src={theme === "light" ? darkIcon : lightIcon}
       onClick={toggleTheme}
       alt="Toggle theme"
     />

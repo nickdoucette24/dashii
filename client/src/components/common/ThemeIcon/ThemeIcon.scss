@@ -1,12 +1,15 @@
-.settings-gear {
-  width: 1.5rem;
+@use "../../../sass/partials/variables" as *;
+
+.theme-icon {
+  width: 1.75rem;
   padding: 0.5rem;
   border-radius: 2rem;
+  background-color: $hoverRed;
   transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
   cursor: pointer;
 
   &:hover {
-    background-color: #ab6e6e2d;
+    background-color: $hoverDarkRed;
   }
 
   &:active {

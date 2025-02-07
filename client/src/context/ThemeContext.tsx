@@ -7,9 +7,13 @@ type ThemeContextType = {
   toggleTheme: () => void;
 };
 
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+type Props = {
+  children: React.ReactNode;
+};
 
-export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+const ThemeContext = createContext<ThemeContextType | null>(null);
+
+export const ThemeProvider = ({ children }: Props) => {
   const [theme, setTheme] = useState<Theme>(
     (localStorage.getItem("theme") as Theme) || "light"
   );
