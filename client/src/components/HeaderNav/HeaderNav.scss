@@ -1,0 +1,48 @@
+@use "../../sass/partials/mixins" as *;
+@use "../../sass/partials/variables" as *;
+
+.header-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem;
+
+  &__item {
+    font-weight: 600;
+    // padding: 0.5rem 0.75rem;
+    // box-sizing: border-box;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+      transform 0.2s ease-in-out;
+
+    &:hover {
+      color: $red;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1.25rem;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: $red;
+      transition: width 0.2s ease-in-out;
+      z-index: 300;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+}

@@ -50,13 +50,18 @@
   &__nav-wrapper {
     display: none;
 
-    @include tablet {
+    @include laptop {
       display: flex;
     }
   }
 
   &__auth-wrapper {
-    @extend .header__nav-wrapper;
+    display: none;
+    gap: 0.5rem;
+
+    @include tablet {
+      display: flex;
+    }
   }
 
   &__settings-wrapper {
@@ -64,6 +69,7 @@
 
     @include mobile {
       @include flex-centre;
+      margin: 0 1rem;
     }
   }
 

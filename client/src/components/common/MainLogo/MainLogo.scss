@@ -2,6 +2,7 @@
 
 .main-logo {
   width: 8rem;
+  cursor: pointer;
 
   @include mobile {
     width: 9rem;

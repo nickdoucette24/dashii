@@ -12,19 +12,24 @@
     border-radius: 0.3rem;
     border: 2px solid transparent;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
     color: $red;
     cursor: pointer;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
-      border 0.2s ease-in-out;
+      border 0.2s ease-in-out, transform 0.2s ease-in-out;
 
     &:hover {
       background-color: $hoverRed;
       color: $darkRed;
     }
 
+    &:active {
+      transform: scale(0.98);
+    }
+
     &--signup {
-      padding: 0.5rem 0.75rem;
+      border: 2px solid $red;
+
       &:hover {
         border: 2px solid $red;
         background-color: $red;

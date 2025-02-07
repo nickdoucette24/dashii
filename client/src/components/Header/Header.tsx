@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
+
 import Hamburger from "../common/Hamburger/Hamburger";
 import HeaderButton from "../common/HeaderButton/HeaderButton";
 import MainLogo from "../common/MainLogo/MainLogo";
-import SettingsGear from "../common/SettingsGear/SettingsGear";
+import ThemeIcon from "../common/ThemeIcon/ThemeIcon";
 import HeaderNav from "../HeaderNav/HeaderNav";
+import { useTheme } from "../../context";
 
 import "./Header.scss";
 
@@ -12,20 +15,20 @@ const Header = () => {
       <div className="header__hamburger-container">
         <Hamburger />
       </div>
-      <div className="header__logo-wrapper">
+      <Link to="/" className="header__logo-wrapper">
         <MainLogo />
-      </div>
+      </Link>
       <div className="header__content">
-        <div className="header__settings-wrapper">
-          <SettingsGear />
-        </div>
         <nav className="header__nav-wrapper">
           <HeaderNav />
         </nav>
+        <div className="header__settings-wrapper">
+          <ThemeIcon />
+        </div>
         <div className="header__auth-wrapper">
           <HeaderButton text={"Login"} />
           <HeaderButton
-            text={"Sign Up"}
+            text={"Get Started"}
             className={"header-button__text--signup"}
           />
         </div>
