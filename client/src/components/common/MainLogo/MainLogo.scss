@@ -1,0 +1,23 @@
+@use "../../../sass/partials/mixins" as *;
+
+.main-logo {
+  width: 8rem;
+  cursor: pointer;
+
+  @include mobile {
+    width: 9rem;
+  }
+
+  @include tablet {
+    width: 10rem;
+    margin-left: 1rem;
+  }
+
+  @include laptop {
+    margin-left: 0rem;
+  }
+
+  @include desktop {
+    width: 11rem;
+  }
+}

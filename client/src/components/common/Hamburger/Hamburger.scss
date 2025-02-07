@@ -1,0 +1,38 @@
+@use "../../../sass/partials/mixins" as *;
+@use "../../../sass/partials/variables" as *;
+@import "hamburgers/_sass/hamburgers/hamburgers";
+
+.hamburger {
+  padding: 0;
+  margin: 1rem;
+  @include flex-centre;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.hamburger-box {
+  width: 2rem;
+}
+
+.hamburger-inner {
+  width: 2rem;
+  height: 0.15rem;
+  background-color: $red;
+
+  &::before {
+    width: 2rem;
+    height: 0.15rem;
+    background-color: $red;
+  }
+
+  &::after {
+    width: 2rem;
+    height: 0.15rem;
+    background-color: $red;
+  }
+}
+
+.is-active {
+  cursor: pointer;
+  z-index: 500;
+}

@@ -1,7 +1,9 @@
-type Props = {};
+import logoRed from "../../../assets/images/dashii_logo_red.png";
 
-const MainLogo = (props: Props) => {
-  return <div>dashii</div>;
+import "./MainLogo.scss";
+
+const MainLogo = () => {
+  return <img src={logoRed} className="main-logo" />;
 };
 
 export default MainLogo;

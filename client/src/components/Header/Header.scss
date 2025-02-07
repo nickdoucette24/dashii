@@ -3,28 +3,80 @@
 
 .header {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  margin: 1rem;
+  z-index: 0;
+
+  @include mobile {
+    margin: 1.25rem;
+  }
+
+  @include tablet {
+    justify-content: flex-start;
+    margin: 1.5rem;
+  }
+
+  @include laptop {
+    margin: 1.5rem 2.5rem;
+  }
 
   &__logo-wrapper {
-    @include flex-centre;
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+
+    @include tablet {
+      position: relative;
+      width: fit-content;
+    }
   }
 
   &__content {
     display: flex;
     align-items: center;
+    width: fit-content;
+
+    @include tablet {
+      margin-left: auto;
+    }
   }
 
   &__nav-wrapper {
     display: none;
+
+    @include laptop {
+      display: flex;
+    }
+  }
+
+  &__auth-wrapper {
+    display: none;
+    gap: 0.5rem;
 
     @include tablet {
       display: flex;
     }
   }
 
-  &__auth-wrapper {
-    @extend .header__nav-wrapper;
+  &__settings-wrapper {
+    display: none;
+
+    @include mobile {
+      @include flex-centre;
+      margin: 0 1rem;
+    }
+  }
+
+  &__hamburger-container {
+    @include laptop {
+      display: none;
+    }
   }
 }
