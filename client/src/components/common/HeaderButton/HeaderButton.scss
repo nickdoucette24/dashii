@@ -1,11 +1,35 @@
 @use "../../../sass/main.scss" as *;
 @use "../../../sass/partials/mixins" as *;
 @use "../../../sass/partials/fonts" as *;
+@use "../../../sass/partials/variables" as *;
 
 .header-button {
   @include flex-centre;
 
   &__text {
     font-weight: bold;
+    background-color: transparent;
+    border-radius: 0.3rem;
+    border: 2px solid transparent;
+    margin: 0;
+    padding: 0.5rem;
+    color: $red;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+      border 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $hoverRed;
+      color: $darkRed;
+    }
+
+    &--signup {
+      padding: 0.5rem 0.75rem;
+      &:hover {
+        border: 2px solid $red;
+        background-color: $red;
+        color: $white;
+      }
+    }
   }
 }

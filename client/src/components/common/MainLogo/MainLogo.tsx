@@ -1,7 +1,9 @@
+import logoRed from "../../../assets/images/dashii_logo_red.png";
+
 import "./MainLogo.scss";
 
 const MainLogo = () => {
-  return <div className="logo-text">dashii.</div>;
+  return <img src={logoRed} className="main-logo" />;
 };
 
 export default MainLogo;

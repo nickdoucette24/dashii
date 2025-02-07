@@ -9,6 +9,9 @@ import "./Header.scss";
 const Header = () => {
   return (
     <div className="header">
+      <div className="header__hamburger-container">
+        <Hamburger />
+      </div>
       <div className="header__logo-wrapper">
         <MainLogo />
       </div>
@@ -16,15 +19,15 @@ const Header = () => {
         <div className="header__settings-wrapper">
           <SettingsGear />
         </div>
-        <div className="header__hamburger-container">
-          <Hamburger />
-        </div>
         <nav className="header__nav-wrapper">
           <HeaderNav />
         </nav>
         <div className="header__auth-wrapper">
           <HeaderButton text={"Login"} />
-          <HeaderButton text={"Sign Up"} />
+          <HeaderButton
+            text={"Sign Up"}
+            className={"header-button__text--signup"}
+          />
         </div>
       </div>
     </div>
